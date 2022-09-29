@@ -28,7 +28,7 @@ const Main = () => {
                     <h3 className='selected'>Selected Exercises</h3>
                     <div className='girdstyle'>
                         {
-                            activity.map(data=><Card call={callbtn} data={data}></Card>)
+                            activity.map(data=><Card key={data.id} call={callbtn} data={data}></Card>)
                         }
                     </div>
                 </section>

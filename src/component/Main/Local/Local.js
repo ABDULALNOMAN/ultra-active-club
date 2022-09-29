@@ -1,6 +1,5 @@
 const localStoragesetitem = (id) => {
-    const localItem = {}
-    
+    let localItem = {}
     const otherItem = localItem[id]
     if (otherItem) {
         const newOtherItem = otherItem + 1
@@ -11,6 +10,18 @@ const localStoragesetitem = (id) => {
     }
     localStorage.setItem('time', JSON.stringify(localItem))
 }
+const localStorageGetitem = () => {
+    let localItem = {}
+    const GetItem = localStorage.getItem('time')
+    if (GetItem) {
+        localItem = JSON.parse(GetItem)
+    }
+    else {
+        localItem = {}
+    }
+    return localItem
+}
 export {
-    localStoragesetitem
+    localStoragesetitem,
+    localStorageGetitem
 }
