@@ -7,15 +7,31 @@
     position: relative;
     top: 70px;
 }
+.headingSection{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    width: 230px;
+    justify-content: space-around;
+}
+.logo{
+    background-color: red;
+    width: 70px;
+    height: 70Px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 2px wheat;
+}
 .girdstyle{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
 }
 .inform{
-    background-color: red;
+    background-color:gainsboro;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
-.logo{
-    background-color: red;
-    width: 100px;
+.headername{
+    color: rgb(88, 81, 71);
 }

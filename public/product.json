@@ -2,42 +2,42 @@
   {
     "id": "63350474170aa23b117ea284",
     "picture": "https://as2.ftcdn.net/v2/jpg/02/88/86/41/1000_F_288864166_rxLPfc3iVpE5TX04KzuqZym5rUcJJYk1.jpg",
-    "time": 37,
+    "time":70,
     "second": 34,
     "status": "cricket"
   },
   {
     "id": "633504741d6f02d45467a865",
     "picture": "https://img.freepik.com/free-photo/plants-gardening-tools-close-up_23-2148905244.jpg?w=740&t=st=1664420720~exp=1664421320~hmac=43beaff7f0786f8cada8b0c677c5ab2e64cb38de775f76f9ca9b8adfa0eba8ca",
-    "time": 33,
+    "time": 80,
     "second": 25,
     "status": "Garden"
   },
   {
     "id": "63350474091d10357c7f26d3",
     "picture": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=740&t=st=1664420853~exp=1664421453~hmac=e328d32d2a80df1f694a65e5e013e0bf8de2807bb0915232313bc6bd8e780f9b",
-    "time": 28,
+    "time": 90,
     "second": 37,
     "status": "Coding"
   },
   {
     "id": "633504747cf0dba6959879f7",
     "picture": "https://img.freepik.com/free-vector/businessman-holding-pencil-big-complete-checklist-with-tick-marks_1150-35019.jpg?w=740&t=st=1664422172~exp=1664422772~hmac=6147cad87af16f7b962c3f7bb4e836704d5107b214a0a3dce9462bd227cfe2b0",
-    "time": 27,
+    "time":80,
     "second": 29,
     "status": "Notes"
   },
   {
     "id": "63350474d08377e3bf94e38f",
     "picture": "https://as1.ftcdn.net/v2/jpg/01/27/34/70/1000_F_127347038_8oW4PPsy37rgtdoknaMvYBNKAaK8Y4nW.jpg",
-    "time": 39,
+    "time":70,
     "second": 20,
     "status": "Football"
   },
   {
     "id": "63350474d08377e3bf94e38f",
     "picture": "https://img.freepik.com/premium-photo/silhouette-man-running-sprinting-road-fit-male-fitness-runner-during-outdoor-workout_38335-402.jpg?w=740",
-    "time": 39,
+    "time": 60,
     "second": 20,
     "status": "exercise"
   }

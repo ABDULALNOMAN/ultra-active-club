@@ -8,8 +8,8 @@ function Card(props) {
         <div className='item'>
             <img className='images' src={picture} alt="" />
             <h2>{status}</h2>
-            <h5>{time}</h5>
-            <button>click</button>
+            <h4> time required: {time} Min</h4>
+            <button>add to list</button>
         </div>
     );
 }

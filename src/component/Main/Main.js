@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Carditem/Card';
+import Inform from './Inform/Inform';
 import"./Main.css"
 
 const Main = () => {
@@ -14,17 +15,20 @@ const Main = () => {
         <div>
             <div className='main'>
                 <section className='firstsection'>
-                    <div className=''>
-                        <img className='logo' src={'undraw_Activity_tracker_re_2lvv.png'} alt="" />
-                        <h1>activities</h1>
+                    {/* <div className='headingSection'>
+                        <img className='logo' src={'img/undraw_Activity_tracker_re_2lvv.png'} alt="" />
+                        <h1 className='headername'>activities</h1>
                     </div>
+                    <h3>Selected Exercises</h3>
                     <div className='girdstyle'>
                         {
                             activity.map(data=><Card data={data}></Card>)
                         }
-                    </div>
+                    </div> */}
                 </section>
-                <section className='inform'>right section</section>
+                <section className='inform'>
+                    <Inform></Inform>
+                </section>
             </div>
         </div>
     );

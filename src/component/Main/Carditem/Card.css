@@ -1,6 +1,26 @@
 .images{
     width: 100%;
+    height: 200px;
+    border-radius: 10px;
 }
 .item{
-    background-color: purple;
+    background-color: rgb(62, 3, 62);
+    padding: 10px;
+    color: wheat;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+
+}
+.item button{
+    padding-block: 6px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: steelblue;
+    color: white;
+    border: none;
+}
+.item button:hover{
+    background-color: rgb(39, 69, 93);
+    transition: 2s;
 }
