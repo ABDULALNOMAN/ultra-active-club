@@ -19,7 +19,7 @@
     width: 70px;
     height: 70Px;
     border-radius: 50%;
-    box-shadow: 1px 1px 10px 2px wheat;
+    box-shadow: 1px 1px 2px 1px rgb(24, 80, 104);
 }
 .girdstyle{
     display: grid;
@@ -28,10 +28,19 @@
 }
 .inform{
     background-color:gainsboro;
-    height: 100vh;
+    height: 120vh;
     position: sticky;
     top: 0;
 }
 .headername{
     color: rgb(88, 81, 71);
+}
+.selected{
+    font-size: 20px;
+    color: rgb(72, 70, 70);
+}
+@media screen and( max-widht:930px) {
+    .girdstyle{
+        grid-template-columns: repeat(2,1fr);
+    }
 }

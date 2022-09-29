@@ -11,8 +11,64 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: skyblue;
+    background-color: rgb(9, 73, 99);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    line-height: 0px;
+    margin-block:30px ;
+    color: white;
 }
 .information{
     margin-inline: 20px;
+}
+.health-info sub{
+    display: inline-block;
+    text-transform: lowercase;
+    font-size: 16px;
+}
+.break{
+    color: rgb(67, 67, 67);
+}
+.break-button {
+    display: flex;
+    background-color: rgb(24, 80, 104);
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+.break-button button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(102, 2, 37);
+    border: none;
+}
+.details{
+    margin-top: 40px;
+    color: rgb(67, 67, 67);
+}
+.details-constent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(24, 80, 104);
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+}
+.first{
+    margin-bottom: 20px;
+}
+.lestbtn{
+    width: 100%;
+    margin-top: 40px;
+    padding-block: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(1, 65, 1);
+    color: white;
 }

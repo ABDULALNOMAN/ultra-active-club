@@ -25,24 +25,23 @@ function Inform(props) {
                     <h5>age</h5>
                 </div>
             </div>
-            <h2>add a break</h2>
-            <div>
+            <h2 className='break'>add a break</h2>
+            <div className='break-button'>
                 <button>10s</button>
                 <button>20s</button>
                 <button>30s</button>
                 <button>40s</button>
-                <button>50s</button>
             </div>
-            <h2>exercises details</h2>
-            <div>
+            <h2 className='details'>exercises details</h2>
+            <div className='details-constent first'>
                 <h3>exercise time</h3>
-                <h3></h3>
+                <h4>200second</h4>
             </div>
-            <div>
+            <div className='details-constent'>
                 <h3>break time</h3>
-                <h3></h3>
+                <h4>15second</h4>
             </div>
-            <button>activity completed</button>
+            <button className='lestbtn'>activity completed</button>
         </div>
     );
 }

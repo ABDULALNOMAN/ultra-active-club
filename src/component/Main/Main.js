@@ -15,16 +15,16 @@ const Main = () => {
         <div>
             <div className='main'>
                 <section className='firstsection'>
-                    {/* <div className='headingSection'>
+                    <div className='headingSection'>
                         <img className='logo' src={'img/undraw_Activity_tracker_re_2lvv.png'} alt="" />
                         <h1 className='headername'>activities</h1>
                     </div>
-                    <h3>Selected Exercises</h3>
+                    <h3 className='selected'>Selected Exercises</h3>
                     <div className='girdstyle'>
                         {
                             activity.map(data=><Card data={data}></Card>)
                         }
-                    </div> */}
+                    </div>
                 </section>
                 <section className='inform'>
                     <Inform></Inform>
