@@ -2,6 +2,11 @@ import React from 'react';
 import"./Inform.css"
 
 function Inform(props) {
+    const { item } = props
+    const data = item.reduce((previous, current) => previous + current, 0)
+    const id = (time) => {
+        console.log(time)
+    }
     return (
         <div className='information'>
             <div className='my-info'>
@@ -27,7 +32,7 @@ function Inform(props) {
             </div>
             <h2 className='break'>add a break</h2>
             <div className='break-button'>
-                <button>10s</button>
+                <button onClick={()=>id(10)}>10s</button>
                 <button>20s</button>
                 <button>30s</button>
                 <button>40s</button>
@@ -35,7 +40,7 @@ function Inform(props) {
             <h2 className='details'>exercises details</h2>
             <div className='details-constent first'>
                 <h3>exercise time</h3>
-                <h4>200second</h4>
+                <h4>{data}min</h4>
             </div>
             <div className='details-constent'>
                 <h3>break time</h3>

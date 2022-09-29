@@ -10,7 +10,13 @@ const Main = () => {
             .then(res => res.json())
             .then(data => setactivity(data))
     }, [])
-    console.log(activity)
+    
+    // sent data to inform
+    const [item, setitem] = useState([])
+    const callbtn = (time) => {
+        const data = [...item, time]
+        setitem(data)
+    }
     return (
         <div>
             <div className='main'>
@@ -22,12 +28,12 @@ const Main = () => {
                     <h3 className='selected'>Selected Exercises</h3>
                     <div className='girdstyle'>
                         {
-                            activity.map(data=><Card data={data}></Card>)
+                            activity.map(data=><Card call={callbtn} data={data}></Card>)
                         }
                     </div>
                 </section>
                 <section className='inform'>
-                    <Inform></Inform>
+                    <Inform item={item}></Inform>
                 </section>
             </div>
         </div>

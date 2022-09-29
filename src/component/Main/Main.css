@@ -39,8 +39,20 @@
     font-size: 20px;
     color: rgb(72, 70, 70);
 }
-@media screen and( max-widht:930px) {
+@media screen and ( max-width:768px) {
     .girdstyle{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    .main{
+        grid-template-columns: 1fr;
+    }
+    .inform{
+        margin-inline: 30px;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:576px) {
+    .girdstyle{
+        grid-template-columns: 1fr;
     }
 }
