@@ -19,6 +19,7 @@
     background-color: steelblue;
     color: white;
     border: none;
+    text-transform: capitalize;
 }
 .item button:hover{
     background-color: rgb(39, 69, 93);

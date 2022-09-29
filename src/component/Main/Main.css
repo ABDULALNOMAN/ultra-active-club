@@ -15,9 +15,8 @@
     justify-content: space-around;
 }
 .logo{
-    background-color: red;
-    width: 70px;
-    height: 70Px;
+    width: 50px;
+    height: 50Px;
     border-radius: 50%;
     box-shadow: 1px 1px 2px 1px rgb(24, 80, 104);
 }
@@ -34,6 +33,7 @@
 }
 .headername{
     color: rgb(88, 81, 71);
+    text-shadow: 1px 1px 2px steelblue;
 }
 .selected{
     font-size: 20px;

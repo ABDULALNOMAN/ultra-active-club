@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 10px;
 }
 .health-info{
     display: flex;
@@ -25,6 +26,9 @@
     display: inline-block;
     text-transform: lowercase;
     font-size: 16px;
+}
+.location{
+    line-height: 8px;
 }
 .break{
     color: rgb(67, 67, 67);

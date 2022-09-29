@@ -23,8 +23,8 @@ const Main = () => {
             <div className='main'>
                 <section className='firstsection'>
                     <div className='headingSection'>
-                        <img className='logo' src={'img/undraw_Activity_tracker_re_2lvv.png'} alt="" />
-                        <h1 className='headername'>activities</h1>
+                        <img className='logo' src={'img/sport-house-active-people-logo-vector-4139222-removebg-preview.png'} alt="" />
+                        <h1 className='headername'> on activities</h1>
                     </div>
                     <h3 className='selected'>Selected Exercises</h3>
                     <div className='girdstyle'>

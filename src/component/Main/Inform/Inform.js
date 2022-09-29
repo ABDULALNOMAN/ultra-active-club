@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { localStorageGetitem, localStoragesetitem } from '../Local/Local';
 import"./Inform.css"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Inform(props) {
     // exercise time 
@@ -17,11 +19,15 @@ function Inform(props) {
          const GetTime = localStorageGetitem()
             settime(GetTime)
     }, [])
+    // toastify
+    const toastify = () => {
+        toast('congratulation you are done with you activity')
+    }
     return (
         <div className='information'>
             <div className='my-info'>
                 <img className='img' src={'img/my-bg.png'} alt="" />
-                <div>
+                <div className='location'>
                     <h3>abdul al noman</h3>
                     <p>chittagong,bangladesh</p>
                 </div>
@@ -56,7 +62,10 @@ function Inform(props) {
                 <h3>break time</h3>
                 <h4>{time}second</h4>
             </div>
-            <button className='lestbtn'>activity completed</button>
+            <button onClick={() => toastify()} className='lestbtn'>activity completed</button>
+            <div className='toast'>
+                <ToastContainer />
+            </div>
         </div>
     );
 }
