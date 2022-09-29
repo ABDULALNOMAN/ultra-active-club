@@ -9,7 +9,7 @@ const Question = () => {
                 <dt>What is the difference between props and state?</dt>
                 <dd>Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components.</dd>
                 <dt>What is Useeffect used for?</dt>
-                <dd></dd>
+                <dd>The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers.</dd>
             </dl>
         </div>
     );
