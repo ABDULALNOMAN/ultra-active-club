@@ -23,7 +23,7 @@ function Inform(props) {
                 <img className='img' src={'img/my-bg.png'} alt="" />
                 <div>
                     <h3>abdul al noman</h3>
-                    <p>chittagong,bangaldesh</p>
+                    <p>chittagong,bangladesh</p>
                 </div>
             </div>
             <div className='health-info'>

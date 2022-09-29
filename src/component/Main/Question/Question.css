@@ -1,0 +1,16 @@
+.question{
+    background-color: rgb(214, 208, 208);
+    padding: 20px;
+    border-radius: 10px; 
+    line-height: 24px;
+}
+.question dt{
+    color: red;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.question dd{
+    color: rgb(72, 71, 71);
+    font-size: 16px;
+}
