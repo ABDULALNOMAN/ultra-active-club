@@ -10,7 +10,7 @@ const Main = () => {
             .then(res => res.json())
             .then(data => setactivity(data))
     }, [])
-    
+
     // sent data to inform
     const [item, setitem] = useState([])
     const callbtn = (time) => {

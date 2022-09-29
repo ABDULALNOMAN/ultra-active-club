@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { localStoragesetitem } from '../Local/Local';
 import"./Inform.css"
 
 function Inform(props) {
+    // exercise time 
     const { item } = props
     const data = item.reduce((previous, current) => previous + current, 0)
+    // break time
+    const [time,settime]=useState()
     const id = (time) => {
-        console.log(time)
+        settime(time)
+        localStoragesetitem(time)
     }
     return (
         <div className='information'>
@@ -33,9 +38,9 @@ function Inform(props) {
             <h2 className='break'>add a break</h2>
             <div className='break-button'>
                 <button onClick={()=>id(10)}>10s</button>
-                <button>20s</button>
-                <button>30s</button>
-                <button>40s</button>
+                <button onClick={()=>id(20)}>20s</button>
+                <button onClick={()=>id(30)}>30s</button>
+                <button onClick={()=>id(40)}>40s</button>
             </div>
             <h2 className='details'>exercises details</h2>
             <div className='details-constent first'>
@@ -44,7 +49,7 @@ function Inform(props) {
             </div>
             <div className='details-constent'>
                 <h3>break time</h3>
-                <h4>15second</h4>
+                <h4>{time}second</h4>
             </div>
             <button className='lestbtn'>activity completed</button>
         </div>
