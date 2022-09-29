@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Card from './Carditem/Card';
 import Inform from './Inform/Inform';
 import"./Main.css"
+import Question from './Question/Question';
 
 const Main = () => {
     const [activity, setactivity] = useState([])
@@ -31,6 +32,7 @@ const Main = () => {
                             activity.map(data=><Card key={data.id} call={callbtn} data={data}></Card>)
                         }
                     </div>
+                    <Question></Question>
                 </section>
                 <section className='inform'>
                     <Inform item={item}></Inform>

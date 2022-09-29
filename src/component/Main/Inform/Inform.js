@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { localStorageGetitem, localStoragesetitem } from '../Local/Local';
 import"./Inform.css"
 
@@ -8,22 +8,15 @@ function Inform(props) {
     const data = item.reduce((previous, current) => previous + current, 0)
     // break time
     const [time, settime] = useState([])
-    const id = (time) => { 
+    const id = (time) => {
         localStoragesetitem(time)
-        const item = localStorageGetitem()
-        const newitem = []
-        if (item) {
-            for (const data in item) {
-                newitem.push(data)
-            }
-        }
-        settime(newitem)
-
+        settime(time)
     }
-    let timing = 0
-    for (const iterator of time) {
-        timing = iterator
-    }
+    // local storage time set
+    useEffect(() => {
+         const GetTime = localStorageGetitem()
+            settime(GetTime)
+    }, [])
     return (
         <div className='information'>
             <div className='my-info'>
@@ -61,7 +54,7 @@ function Inform(props) {
             </div>
             <div className='details-constent'>
                 <h3>break time</h3>
-                <h4>{timing}second</h4>
+                <h4>{time}second</h4>
             </div>
             <button className='lestbtn'>activity completed</button>
         </div>
